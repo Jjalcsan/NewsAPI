@@ -19,14 +19,14 @@ export class HomePage {
     console.log(this.noticas)
 
   }
-  /*
+  
   listadoNoticias(busqueda: string){
 
     this.noticas.realizarBusqueda(busqueda)
-    .subscribe(resp => {this.noticias = resp.articles;}
+    .subscribe(resp => {this.noticias = resp.sources;}
     ,error => {console.log(error);})
 
-  }*/
+  }
 
   realizarBusquedaInicial(){
 
