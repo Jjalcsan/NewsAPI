@@ -1,0 +1,44 @@
+
+
+<ion-content [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-segment value="1">
+        <ion-segment-button value="1" >
+          <ion-label>Titulares</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="2">
+          <ion-label>Deportes</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="3">
+          <ion-label>General</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="4">
+          <ion-label>Entretenimiento</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row *ngFor="let noticia of noticias">
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-card-title>
+              {{noticia.title}} 
+            </ion-card-title>
+            <ion-card-subtitle>
+              <h4>{{noticia.author}}</h4>
+            </ion-card-subtitle>
+            <p>{{noticia.description}}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  
+</ion-footer>
