@@ -31,7 +31,9 @@ export class HomePage {
   realizarBusquedaInicial(){
 
     this.noticas.realizarBusquedaInicial()
-    .subscribe(resp => {this.noticias = resp.articles;}
+    .subscribe(resp => {
+      console.log(resp)
+      this.noticias = resp.sources;}
     ,error => {console.log(error);})
 
   }

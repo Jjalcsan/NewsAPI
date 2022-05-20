@@ -1,7 +1,7 @@
 export interface Welcome {
     status:       string;
     totalResults: number;
-    articles:     Article[];
+    sources:     Article[];
 }
 
 export interface Article {
